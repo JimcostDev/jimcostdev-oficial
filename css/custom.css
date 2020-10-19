@@ -1,0 +1,187 @@
+/*----------------------------------------------------
+custom.css
+@Author: Noemi Leon
+
+Table of Content
+- Colors
+- General
+- Header
+- Main Section
+- Skills Section
+- Portfolio Section
+---------------------------------------------------- */
+
+/*
+==============================================
+			COLORS
+==============================================
+*/
+:root{
+    --blue-navy: #05205d;
+    --blue-light: #00C5FF;
+    --brown-leather:#AB987A;
+    --blue-main: #0A4B8D;
+    --white-egg:#F5F5F5;
+}
+/*
+/*
+==============================================
+			GENERAL
+==============================================
+*/
+.sect{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+h3.sect-title{
+    color: var(--blue-navy);
+    text-transform: uppercase;
+    font-size: 38px;
+    line-height: 55px;
+    margin-bottom: 15px;
+}
+h4.sect-subtitle{
+    opacity: 0.8;
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 24px
+}
+.bg-grad{
+    background-image: -webkit-linear-gradient(0deg, var(--blue-light) 0%, var(--white-egg) 100%);
+    background-image: -ms-linear-gradient(0deg, var(--blue-light) 0%, var(--white-egg) 100%);
+}
+.bg-grad-b{
+    background-image: -webkit-linear-gradient(0deg, var(--brown-leather) 0%, var(--white-egg) 100%);
+    background-image: -ms-linear-gradient(0deg, var(--brown-leather) 0%, var(--white-egg) 100%);
+}
+.btn-primary{
+    background-color: var(--blue-main);
+    border-color: #00C5FF;
+}
+.btn-primary:hover,
+.btn-primary:active
+{
+    background-color: #00C5FF;
+    border-color: #00C5FF;
+}
+.head-content > button > i{
+    font-size: 34px;
+    color: var(--blue-navy);
+}
+/*
+==============================================
+			HEADER
+==============================================
+*/
+.header-area .main-menu,
+.header-area .main-menu .dropdown-menu{
+    background: var(--blue-main);
+    box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.1);
+}
+.header-area .main-menu .navbar {
+    height: 70px;
+}
+.header-area .main-menu .navbar .nav-link{
+    font-size: 14px;
+    color: var(--white-egg);
+    padding: 8px;
+}
+.header-area .main-menu .navbar .nav-link:hover{
+    font-weight: 600;
+}
+
+/*
+==============================================
+			MAIN-INFO SECTION
+==============================================
+*/
+.main-info{
+    position: relative;
+    z-index: 1;
+    padding-bottom: 42px;
+    margin-bottom: 58px;
+}
+.main-info .container{
+    border-radius: 12px;
+    position: relative;
+    bottom: -100px;
+    background: #fff;
+    padding-top: 28px;
+    padding-bottom: 28px;
+    box-shadow: 0px 20px 80px 0px rgba(153, 153, 153, 0.3);
+}
+.main-info .container .img-col .img-container > img{
+    width: 90%;
+    height: 80%;
+}
+.main-info .container .txt-col .text-container {
+    margin: 20px auto 0 auto;
+    width: 90%;
+}
+.main-info .container .txt-col .text-container h4{
+    font-size: 16px;
+}
+.main-info .container .txt-col .text-container p{
+    font-size: 16px;
+    color: var(--brown-leather);
+    margin-bottom: 20px;
+}
+.main-info .container .txt-col .text-container ul.basic-info{
+    padding-left: 0;
+}
+.main-info .container .txt-col .text-container ul.basic-info >li{
+    margin-bottom: 8px;
+}
+.main-info .container .txt-col .text-container ul.basic-info >li > i{
+    margin-right: 4px;
+    color: var(--blue-navy);
+}
+.main-info .container .txt-col .text-container ul.social-nw{
+    margin-top: 20px;
+    padding-left: 0;
+}
+.main-info .container .txt-col .text-container ul.social-nw > li{
+    margin-right: 20px;
+}
+.main-info .container .txt-col .text-container ul.social-nw > li  i{
+    font-size: 40px;
+    color: var(--blue-navy);
+}
+/*
+==============================================
+			SKILLS SECTION
+==============================================
+*/
+.skill-item{
+    margin-bottom: 24px;
+}
+.skill-item .text{
+    margin-bottom: 8px; 
+}
+.skill-item .progress .progress-bar{
+    height: 10px;
+    border-radius: 5px;
+    vertical-align: middle;
+    align-self: center;
+    background-image: -moz-linear-gradient(0deg, var(--blue-light) 0%, var(--brown-leather) 100%);
+    background-image: -webkit-linear-gradient(0deg,  var(--blue-light) 0%, var(--brown-leather) 100%);
+    background-image: -ms-linear-gradient(0deg, var(--blue-light) 0%, var(--brown-leather) 100%);
+}
+/*
+==============================================
+			PORTFOLIO SECTION
+==============================================
+*/
+.card-container .card{
+    max-width: 360px;
+    margin-top: 16px;
+}
+.card-container .card i{
+    font-size: 80px;
+    color: var(--blue-navy);
+}
+.card-container .card h5{
+    margin-top: 12px;
+    margin-bottom: 8px;
+    opacity: 0.8;
+}
