@@ -17,7 +17,7 @@ Table of Content
 ==============================================
 */
 :root{
-    --blue-navy: #05205d;
+    --blue-navy: #093aaa;
     --blue-light: #00C5FF;
     --brown-leather:#AB987A;
     --blue-main: #0A4B8D;
@@ -46,14 +46,14 @@ h4.sect-subtitle{
     font-weight: 500;
     font-size: 24px
 }
-.bg-grad{
+/* .bg-grad{
     background-image: -webkit-linear-gradient(0deg, var(--blue-light) 0%, var(--white-egg) 100%);
     background-image: -ms-linear-gradient(0deg, var(--blue-light) 0%, var(--white-egg) 100%);
 }
 .bg-grad-b{
     background-image: -webkit-linear-gradient(0deg, var(--brown-leather) 0%, var(--white-egg) 100%);
     background-image: -ms-linear-gradient(0deg, var(--brown-leather) 0%, var(--white-egg) 100%);
-}
+} */
 .btn-primary{
     background-color: var(--blue-main);
     border-color: #00C5FF;
@@ -163,9 +163,12 @@ h4.sect-subtitle{
     border-radius: 5px;
     vertical-align: middle;
     align-self: center;
-    background-image: -moz-linear-gradient(0deg, var(--blue-light) 0%, var(--brown-leather) 100%);
+    /* background-image: -moz-linear-gradient(0deg, var(--blue-light) 0%, var(--brown-leather) 100%);
     background-image: -webkit-linear-gradient(0deg,  var(--blue-light) 0%, var(--brown-leather) 100%);
-    background-image: -ms-linear-gradient(0deg, var(--blue-light) 0%, var(--brown-leather) 100%);
+    background-image: -ms-linear-gradient(0deg, var(--blue-light) 0%, var(--brown-leather) 100%); */
+
+    background: #f7cd00;
+    color: #000;
 }
 /*
 ==============================================
