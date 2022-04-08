@@ -17,11 +17,11 @@ Table of Content
 ==============================================
 */
 :root{
-    --blue-navy: #093aaa;
-    --blue-light: #00C5FF;
+    --color-principal: #f7cd00; /*093aaa*/
+    --color-secundario: #dab501/*#00C5FF*/;
     --brown-leather:#AB987A;
-    --blue-main: #0A4B8D;
-    --white-egg:#F5F5F5;
+    --color-aux: #f2f2f2; /*0A4B8D*/
+    --color-text:#f7cd00;
 }
 /*
 /*
@@ -35,7 +35,7 @@ Table of Content
     padding-bottom: 40px;
 }
 h3.sect-title{
-    color: var(--blue-navy);
+    color: var(--color-principal);
     text-transform: uppercase;
     font-size: 38px;
     line-height: 55px;
@@ -48,26 +48,27 @@ h4.sect-subtitle{
     font-size: 24px
 }
 /* .bg-grad{
-    background-image: -webkit-linear-gradient(0deg, var(--blue-light) 0%, var(--white-egg) 100%);
-    background-image: -ms-linear-gradient(0deg, var(--blue-light) 0%, var(--white-egg) 100%);
+    background-image: -webkit-linear-gradient(0deg, var(--color-secundario) 0%, var(--color-text) 100%);
+    background-image: -ms-linear-gradient(0deg, var(--color-secundario) 0%, var(--color-text) 100%);
 }
 .bg-grad-b{
-    background-image: -webkit-linear-gradient(0deg, var(--brown-leather) 0%, var(--white-egg) 100%);
-    background-image: -ms-linear-gradient(0deg, var(--brown-leather) 0%, var(--white-egg) 100%);
+    background-image: -webkit-linear-gradient(0deg, var(--brown-leather) 0%, var(--color-text) 100%);
+    background-image: -ms-linear-gradient(0deg, var(--brown-leather) 0%, var(--color-text) 100%);
 } */
 .btn-primary{
-    background-color: var(--blue-main);
-    border-color: #00C5FF;
+    background-color: var(--color-secundario);
+    border-color: var(--color-secundario); 
 }
 .btn-primary:hover,
 .btn-primary:active
 {
-    background-color: #00C5FF;
-    border-color: #00C5FF;
+    background-color: var(--color-aux);
+    border-color: var(--color-secundario);
+    color:var(--color-secundario)
 }
 .head-content > button > i{
     font-size: 34px;
-    color: var(--blue-navy);
+    color: var(--color-principal);
 }
 /*
 ==============================================
@@ -76,7 +77,7 @@ h4.sect-subtitle{
 */
 .header-area .main-menu,
 .header-area .main-menu .dropdown-menu{
-    background: var(--blue-main);
+    background: var(--color-aux);
     box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.1);
 }
 .header-area .main-menu .navbar {
@@ -84,7 +85,7 @@ h4.sect-subtitle{
 }
 .header-area .main-menu .navbar .nav-link{
     font-size: 14px;
-    color: var(--white-egg);
+    color: var(--color-text);
     padding: 8px;
 }
 .header-area .main-menu .navbar .nav-link:hover{
@@ -135,7 +136,7 @@ h4.sect-subtitle{
 }
 .main-info .container .txt-col .text-container ul.basic-info >li > i{
     margin-right: 4px;
-    color: var(--blue-navy);
+    color: var(--color-principal);
 }
 .main-info .container .txt-col .text-container ul.social-nw{
     margin-top: 20px;
@@ -146,7 +147,7 @@ h4.sect-subtitle{
 }
 .main-info .container .txt-col .text-container ul.social-nw > li  i{
     font-size: 40px;
-    color: var(--blue-navy);
+    color: var(--color-principal);
 }
 /*
 ==============================================
@@ -164,9 +165,9 @@ h4.sect-subtitle{
     border-radius: 5px;
     vertical-align: middle;
     align-self: center;
-    /* background-image: -moz-linear-gradient(0deg, var(--blue-light) 0%, var(--brown-leather) 100%);
-    background-image: -webkit-linear-gradient(0deg,  var(--blue-light) 0%, var(--brown-leather) 100%);
-    background-image: -ms-linear-gradient(0deg, var(--blue-light) 0%, var(--brown-leather) 100%); */
+    /* background-image: -moz-linear-gradient(0deg, var(--color-secundario) 0%, var(--brown-leather) 100%);
+    background-image: -webkit-linear-gradient(0deg,  var(--color-secundario) 0%, var(--brown-leather) 100%);
+    background-image: -ms-linear-gradient(0deg, var(--color-secundario) 0%, var(--brown-leather) 100%); */
 
     background: #f7cd00;
     color: #000;
@@ -182,7 +183,7 @@ h4.sect-subtitle{
 }
 .card-container .card i{
     font-size: 80px;
-    color: var(--blue-navy);
+    color: var(--color-principal);
 }
 .card-container .card h5{
     margin-top: 12px;
