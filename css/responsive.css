@@ -16,9 +16,9 @@ Table of Content
 ==============================================
 */
 @media (min-width: 576px) {
-    .hidden-icon{
-        display: none;/*mostrar icono en movil*/
-    }
+    /* .hidden-icon{
+        display: none;
+    } */
     .header-area .main-menu .navbar .nav-link{
         padding: .5rem 1rem;
     }
