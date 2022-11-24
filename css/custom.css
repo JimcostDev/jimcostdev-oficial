@@ -1,15 +1,3 @@
-/*----------------------------------------------------
-custom.css
-@Author: Noemi Leon
-
-Table of Content
-- Colors
-- General
-- Header
-- Main Section
-- Skills Section
-- Portfolio Section
----------------------------------------------------- */
 
 /*
 ==============================================
@@ -47,14 +35,7 @@ h4.sect-subtitle{
     font-weight: 500;
     font-size: 24px
 }
-/* .bg-grad{
-    background-image: -webkit-linear-gradient(0deg, var(--color-secundario) 0%, var(--color-text) 100%);
-    background-image: -ms-linear-gradient(0deg, var(--color-secundario) 0%, var(--color-text) 100%);
-}
-.bg-grad-b{
-    background-image: -webkit-linear-gradient(0deg, var(--brown-leather) 0%, var(--color-text) 100%);
-    background-image: -ms-linear-gradient(0deg, var(--brown-leather) 0%, var(--color-text) 100%);
-} */
+
 .btn-primary{
     background-color: var(--color-secundario);
     border-color: var(--color-secundario); 
@@ -159,18 +140,6 @@ h4.sect-subtitle{
 }
 .skill-item .text{
     margin-bottom: 8px; 
-}
-.skill-item .progress .progress-bar{
-    height: 10px;
-    border-radius: 5px;
-    vertical-align: middle;
-    align-self: center;
-    /* background-image: -moz-linear-gradient(0deg, var(--color-secundario) 0%, var(--brown-leather) 100%);
-    background-image: -webkit-linear-gradient(0deg,  var(--color-secundario) 0%, var(--brown-leather) 100%);
-    background-image: -ms-linear-gradient(0deg, var(--color-secundario) 0%, var(--brown-leather) 100%); */
-
-    background: #f7cd00;
-    color: #000;
 }
 /*
 ==============================================
