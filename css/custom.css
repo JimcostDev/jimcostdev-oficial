@@ -5,11 +5,11 @@
 ==============================================
 */
 :root{
-    --color-principal: #f7cd00; /*093aaa*/
-    --color-secundario: #dab501/*#00C5FF*/;
+    --color-principal: #0080f7; /*093aaa*/
+    --color-secundario: #0080f7/*#00C5FF*/;
     --brown-leather:#AB987A;
     --color-aux: #f2f2f2; /*0A4B8D*/
-    --color-text:#f7cd00;
+    --color-text:#0080f7;
 }
 /*
 /*
