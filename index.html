@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JimcostDev by Ronaldo Jiménez | Software Developer</title>
     <meta name="description" content="¡Hola! Soy Ronaldo Jiménez, un Backend Developer apasionado por la creación de soluciones tecnológicas. Descubre mi experiencia laboral, educación y más.">
     <meta name="keywords" content="Ronaldo Jiménez, Backend Developer, Desarrollador web, Experiencia laboral, Educación, Portfolio, jimcostdev">
@@ -13,390 +15,461 @@
     <meta name="twitter:title" content="JimcostDev by Ronaldo Jiménez | Backend Developer">
     <meta name="twitter:description" content="¡Hola! Soy Ronaldo Jiménez, un Backend Developer apasionado por la creación de soluciones tecnológicas. Descubre mi experiencia laboral, educación y más.">
     <meta name="twitter:image" content="https://user-images.githubusercontent.com/53100460/254561844-6471bed7-ba32-4d66-b05f-007da9a95620.jpg">
-    <!-- Resto de tu código -->
-    <link rel="shortcut icon" type="image/png" href="img/logo.png" />
-    <!-- Required Meta Tags -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
 
-    <!-- Bootstrap CSS | v. 4.5 -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--favicon-->
+    <link rel="icon" href="img/logo.webp" type="image/x-icon" />
+    <!-- Agrega aquí tus estilos CSS -->
+    <link rel="stylesheet" href="output.css" />
+    <!-- Agrega aquí tus fuentes de Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
-      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
-      crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="css/custom.css" />
-    <link rel="stylesheet" href="css/responsive.css" />
+    <script
+      src="https://kit.fontawesome.com/67714e5665.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
-
-  <body>
-    <!-- HEADER -->
-    <header class="header-area fixed-top">
-      <div class="main-menu">
-        <nav class="navbar">
-          <div class="container">
-            <ul class="nav ml-auto mr-auto mr-md-0">
-              <li class="nav-item">
-                <a class="nav-link" target="blank" href="https://jimcostdev.github.io/CV_JimcostDev/">CV</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#skills">Sobre mí</a>
-              </li>
-              <li class="nav-item submenu dropdown">
-                <a
-                  href="#"
-                  class="nav-link dropdown-toggle"
-                  data-toggle="dropdown"
-                  role="button"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                  >Proyectos</a
-                >
-                <ul class="dropdown-menu">
-                  <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="https://github.com/JimcostDev/jimcostdev_api"
-                      target="_blank"
-                      >API: JimcostDev</a
-                    >
-                  </li>
-                  <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="https://github.com/JimcostDev/menu-standardization-api"
-                      target="_blank"
-                      >API: Estandarización de Menús</a
-                    >
-                  </li>
-				         <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="https://github.com/JimcostDev/python_programming_fundamentals"
-                      target="_blank"
-                      >Te enseño a programar</a
-                    >
-                  </li>
-                  <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="https://replit.com/@RonaldoJimenez2/Ligretto-Game?v=1"
-                      target="_blank"
-                      >Ligretto Game</a
-                    >
-                  </li>
-                </ul>
-              </li>
-            </ul>
+  <body class="bg-secondary font-Montserrat">
+    <div class="fixed top-1/2 right-0 z-50 text-xs">
+      <a id="toggleCV" href="https://jimcostdev.github.io/CV_JimcostDev/" target="_blank" class="inline-block bg-secondary text-tertiary px-4 py-2  rounded-l-full  transition duration-300 hover:shadow-md hover:text-primary">
+        <i class="fas fa-file-alt mr-1"></i> CV
+      </a>
+    </div>
+    
+    <header class="w-full bg-BACKGROUND_MOBILE md:bg-BACKGROUND_DESKTOP bg-cover relative">
+      <!-- Barra de navegación fija en la parte inferior para móvil, en la parte superior para escritorio -->
+      <nav id="navegacion" class="fixed bottom-0 left-0 w-full shadow-sm bg-secondary text-tertiary py-3 z-50  md:top-0 md:bottom-auto ">
+        <div class="container mx-auto md:w-3/4 flex justify-between items-center px-4 md:px-0 md:space-x-4">
+          <a href="#" class="flex items-center text-xl space-x-2 md:text-lg transition-transform hover:scale-110 hover:text-primary">
+            <i class="fas fa-home"></i>
+            <span class="hidden md:inline">Inicio</span>
+          </a>
+          <a href="#sobre-mi" class="flex items-center text-xl space-x-2 md:text-lg transition-transform hover:scale-110 hover:text-primary">
+            <i class="fas fa-user"></i>
+            <span class="hidden md:inline">Sobre mí</span>
+          </a>
+          <a href="#experiencia" class="flex items-center text-xl space-x-2 md:text-lg transition-transform hover:scale-110 hover:text-primary">
+            <i class="fas fa-briefcase"></i>
+            <span class="hidden md:inline">Experiencia</span>
+          </a>
+          <a href="#estudios" class="flex items-center text-xl space-x-2 md:text-lg transition-transform hover:scale-110 hover:text-primary">
+            <i class="fas fa-graduation-cap"></i>
+            <span class="hidden md:inline">Estudios</span>
+          </a>
+          <a href="#proyectos" class="flex items-center text-xl space-x-2 md:text-lg transition-transform hover:scale-110 hover:text-primary">
+            <i class="fas fa-laptop-code"></i>
+            <span class="hidden md:inline">Proyectos</span>
+          </a>
+        </div>
+      </nav>
+      
+      
+      
+      <!-- Contenido principal que se desplazará -->
+      <div id="presentacion" class="pt-16 md:pt-24 px-0 relative">
+        <!-- Imagen de perfil -->
+        <div id="img-usuario" class="mb-4 relative mx-auto w-full h-full md:w-64 md:h-64">
+          <img src="img/jimcostdev-ai.webp" class="w-full h-full object-cover rounded-full transition-transform duration-300 transform hover:scale-105" alt="Ronaldo Jiménez" id="profile-img">
+        </div>
+    
+        <h1 class="text-3xl md:text-5xl font-bold px-8 text-center">
+          HOLA, SOY <span class="text-secondary">RONALDO JIMÉNEZ</span>
+        </h1>
+    
+        <!-- Profesión y redes sociales -->
+        <div class="flex flex-col items-center justify-between mt-1 px-8">
+          <p class="text-lg md:text-2xl font-medium mb-2">SOFTWARE DEVELOPER</p>
+          <!-- Redes sociales -->
+          <div class="mb-2 text-2xl">
+            <a href="https://www.linkedin.com/in/ronaldo-jimenez" target="_blank" class="mr-2 inline-block transition-transform hover:scale-110 hover:text-secondary">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/JimcostDev" target="_blank" class="mr-2 inline-block transition-transform hover:scale-110 hover:text-secondary">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.youtube.com/@jimcostdev" target="_blank" class="inline-block transition-transform hover:scale-110 hover:text-secondary">
+              <i class="fab fa-youtube"></i>
+            </a>
           </div>
-        </nav>
+        </div>
+    
+        <!-- Correo electrónico -->
+        <div class="flex items-center justify-center px-8 p-2">
+          <span id="email" class="text-tertiary mr-2">jimcostdev@gmail.com</span>
+          <div id="copyIcon" class="cursor-pointer text-tertiary transition-transform hover:scale-110 hover:text-secondary" onclick="toggleCopyIcon()">
+            <i id="icon" class="fas fa-copy"></i>
+          </div>
+          <small id="copiedMessage" class="text-tertiary hidden"><i class="fas fa-check text-secondary"> ¡Copiado!</i></small>
+        </div>
       </div>
     </header>
-    <!-- ./ Header -->
-
-    <!-- MAIN INFO -->
-    <section class="main-info bg-grad" id="main-info">
-      <div class="container">
-        <div class="row">
-          <div
-            class="col-12 col-md-5 col-xl-6 img-col d-flex align-items-center"
-          >
-            <div class="img-container d-flex justify-content-center">
-              <img src="img/perfil.png" alt="foto de perfil" />
-            </div>
-          </div>
-          <div class="col-12 col-md-7 col-xl-6 txt-col">
-            <div class="text-container">
-              <h3 class="sect-title text-uppercase">Ronaldo Jiménez Acosta</h3>
-              <h4 class="text-uppercase">Ingeniero informático | Desarrollador de Software</h4>
-              <p class="text">
-                Soy un apasionado de la tecnología con más de 2 años de experiencia en desarrollo de 
-                software y aplicaciones web. Poseo habilidades sólidas en desarrollo web utilizando 
-                <b>Python y Javascript</b>, así como en la gestión de bases de datos, incluyendo <b>Microsoft 
-                SQL Server y MongoDB</b>. Destaco por mi capacidad para enseñar y servir como mentor, 
-                lo que me ha llevado a desempeñarme como docente y tutor de programación. Además, 
-                estoy certificado en <b>Azure Fundamentals</b> por Microsoft.
-              </p>
-              <h4 class="text-uppercase">CONTACTO</h4>
-              <ul class="list-inline social-nw">
-                <li class="list-inline-item">
-                  <a
-                    href="https://github.com/JimcostDev"
-                    target="_blank"
-                    ><i class="fab fa-github"></i
-                  ></a>
-                </li>
-                <li class="list-inline-item">
-                  <a
-                    href="https://www.linkedin.com/in/ronaldo-jimenez"
-                    target="_blank"
-                    ><i class="fab fa-linkedin"></i
-                  ></a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="https://www.youtube.com/@jimcostdev" target="_blank"
-                    ><i class="fab fa-youtube"></i
-                  ></a>
-                </li>
-              </ul>
-              <ul class="list-unstyled basic-info">
-                <li><i class="fas fa-envelope"></i> jimcostdev@gmail.com</li>
-              </ul>
-             
-            </div>
-            
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- ./Main info -->
-
-    <!-- SKILLS -->
-    <section class="sect skills" id="skills">
-      <div class="container">
-        <div class="head-content d-flex align-items-baseline">
-          <button
-            class="btn"
-            type="button"
-            data-toggle="collapse"
-            data-target="#skills-content"
-            aria-expanded="false"
-            aria-controls="skills-content"
-          >
-            <i class="far fa-plus-square"></i>
-          </button>
-          <h3 class="sect-title">EXPERIENCIA LABORAL RECIENTE</h3>
-        </div>
-        <div class="row collapse" id="skills-content">
-
-          <div class="skills-col col-12 col-md-6">
-            <div class="card my-2">
-              <div class="card-header">
-                <h5 class="card-title">Academic Tutor and Programming Instructor | Freelance</h5>
-              </div>
-              <div class="card-body">
-                <h6 class="card-subtitle text-muted">📆 Desde octubre 2022</h6>
-                <p class="card-text">
-                  <ul>
-                    <li> 📚 Imparto clases y tutoriales dinámicos sobre programación y desarrollo de software. Enseño fundamentos de programación, Python, JavaScript y C#.</li>
-                    <li> 🔍 Utilizo métodos interactivos para facilitar la comprensión de conceptos complejos. Personalizo la enseñanza según los estilos de aprendizaje individuales, logrando mejoras significativas en las habilidades.</li>
-                    <li> 🌟 Con más de 10 meses de experiencia, fomento la curiosidad y la pasión por resolver problemas, inspirando a los estudiantes a apreciar el arte de la codificación.</li>
-                  </ul>
-                </p>
-            </div>
-            <div class="card-footer">
-              <button class="btn btn-outline-success mt-2">Algoritmos</button>
-              <button class="btn btn-outline-success mt-2">Python</button>
-              <button class="btn btn-outline-success mt-2">Javascript</button>
-              <button class="btn btn-outline-success mt-2">T-SQL</button>
-              <button class="btn btn-outline-success mt-2">Git</button>
-              <button class="btn btn-outline-success mt-2">C#</button>
-            </div>
-          </div>
-        </div>
-
-          <div class="skills-col col-12 col-md-6">
-              <div class="card my-2">
-                <div class="card-header">
-                  <h5 class="card-title">Backend Developer | Tecnológica Autónoma del Pacífico</h5>
-                </div>
-                <div class="card-body">
-                  <h6 class="card-subtitle text-muted">📆 abril 2021 - marzo 2022 · 1 año</h6>
-                  <p class="card-text">
-                    <ul>
-                      <li> Desarrolle nuevas funcionalidades en las aplicaciones web/escritorio existentes (.Net y C#).</li>
-                      <li> Mantenimiento de la base de datos (SQL Server). </li>
-                      <li> Administración de las plataformas educativas (Office 365 y G-Suite).</li>
-                      <li> Colabore en el desarrollo y despliegue de la plataforma de egresados de la institución.</li>
-                      <li> Creación del portal web de pagos (Beta).</li>
-                    </ul>
-                  </p>
-              </div>
-              <div class="card-footer">
-                <button class="btn btn-outline-success mt-2">.NET</button>
-                <button class="btn btn-outline-success mt-2">C#</button>
-                <button class="btn btn-outline-success mt-2">Javascript</button>
-                <button class="btn btn-outline-success mt-2">T-SQL</button>
-                <button class="btn btn-outline-success mt-2">Git</button>
-              </div>
-            </div>
-          </div>
-
-          <div class="skills-col col-12 col-md-6">
-              <div class="card my-2">
-                <div class="card-header">
-                  <h5 class="card-title">IT Support Assistant | Tecnológica Autónoma del Pacífico</h5>
-                </div>
-                <div class="card-body">
-                  <h6 class="card-subtitle text-muted">📆 agosto 2019 - junio 2020 · 11 meses</h6>
-                  <p class="card-text">
-                    <ul>
-                      <li> Monitoria de acompañamiento y soporte en el área de sistemas</li>
-                      <li> Instalación y configuración de software para desarrollo de sistemas informáticos (NetBeans, SQL-Express, Visual Studio, Arduino, Git, Postman, etc) y aplicaciones para diseño gráfico (pack adobe) </li>
-                      <li> Backups y métodos de recuperación de información.</li>
-                    </ul>
-                  </p>
-                </div>
-                <div class="card-footer">
-                  <button class="btn btn-outline-success mt-2">Windows OS</button>
-                  <button class="btn btn-outline-success mt-2">Ubuntu</button>
-                  <button class="btn btn-outline-success mt-2">Office 365</button>
-                  <button class="btn btn-outline-success mt-2">Microsoft SQL Server</button>
-                </div>
-              </div>
-          </div>
-          
-        </div>
-      </div>
-    </section>
-    <!-- ./Skills -->
-
-    <!-- CERTIFICADOS -->
-    <section class="sect porfolio bg-grad-b" id="portfolio">
-      <div class="container">
-        <div class="head-content d-flex align-items-baseline">
-          <button
-            class="btn"
-            type="button"
-            data-toggle="collapse"
-            data-target="#portfolio-content"
-            aria-expanded="false"
-            aria-controls="portfolio-content"
-          >
-            <i class="far fa-plus-square"></i>
-          </button>
-          <h3 class="sect-title">  Licencias y certificaciones </h3>
-        </div>
-      </div>
-
-      <div class="container-fluid collapse" id="portfolio-content">
-        <div
-          class="card-container d-flex flex-wrap justify-content-around align-items-center"
-        >
-
-        <div class="card-group">
-          <div class="card">
-            <div class="card-header">Microsoft</div>
-            <div class="card-body">
-              <h5 class="card-title"> Microsoft Learn </h5>
-              <a class="fs-6" href="https://docs.microsoft.com/es-es/users/ronaldo-jimenez/" target="_blank" class="btn btn-link">Ver perfil </a>
-            </div>
-            <div class="card-body">
-              <h5 class="card-title"> Python for Beginners  </h5>
-              <a class="fs-6" href="https://learn.microsoft.com/es-es/training/achievements/learn.beginner-python.trophy?username=ronaldo-jimenez" target="_blank" class="btn btn-link">Ver credencial </a>
-            </div>
-            <div class="card-body">
-              <h5 class="card-title"> Microsoft Certified: Azure Fundamentals </h5>
-              <a class="fs-6" href="https://www.credly.com/badges/e8c1f177-3d1f-4496-9461-1b468ed30b4b/public_url" target="_blank" class="btn btn-link">Ver credencial </a>
-            </div>
-          </div>
-
-          <div class="card-group">
-            <div class="card">
-              <div class="card-header">Udemy</div>
-              <div class="card-body">
-                <h5 class="card-title"> .NET 5 </h5>
-                <a href="https://www.udemy.com/certificate/UC-28ded684-8d28-474e-b321-760cfecc8324/" target="_blank" class="btn btn-link">Ver credencial</a>
-              </div>
-            </div>
-
-            <div class="card">
-              <div class="card-header">Platzi</div>
-              <div class="card-body">
-                <h5 class="card-title"> JimcostDev </h5>
-                <a href="https://platzi.com/p/JimcostDev/" target="_blank" class="btn btn-link">Ver perfil</a>
-              </div>
-            </div>
-
-            <div class="card">
-              <div class="card-header">Busuu</div>
-              <div class="card-body">
-                <h5 class="card-title">Nivel B1 de Inglés</h5>
-                <a href="https://api.busuu.com/anon/certificates/77cc9f747ea97d22ba9578b124285f29?lang=es" target="_blank" class="btn btn-link">Ver credencial</a>
-              </div>
-            </div>
-            </div>
-          </div>
-      </div>
-    </section>
-    <!-- ./Portfolio -->
     
-    <!-- SERVICIOS -->
-    <section class="sect services bg-grad-b" id="services">
-      <div class="container">
-        <div class="head-content d-flex align-items-baseline">
-          <button
-            class="btn"
-            type="button"
-            data-toggle="collapse"
-            data-target="#services-content"
-            aria-expanded="false"
-            aria-controls="services-content"
-          >
-            <i class="far fa-plus-square"></i>
+    <main>
+      <section id="sobre-mi" class="px-6 py-6 flex flex-col items-center">
+        <h2 class="text-primary text-xl md:text-2xl font-normal text-center py-2 mb-2 uppercase">
+          Sobre mí
+        </h2>
+        <div class="bg-white shadow-md rounded-2xl p-6 text-center w-full md:w-4/5 md:px-24">
+          <div class="border-b border-gray-300 mb-4 pb-4">
+            <p class="mb-2"> Soy de <span class="text-primary"> Cali, Colombia 🇨🇴</span> </p>
+            <p class="mb-2"> Vivo en <span class="text-primary"> Mallorca, España 🇪🇸 </span></p>
+            <p> Más de <span class="text-primary"> 3 años </span> de experiencia en la industria <span class="text-primary">tecnológica</span> </p>
+          </div>
+          <div>
+            <p>
+              Ingeniero informático con experiencia en desarrollo de software. Poseo habilidades sólidas en desarrollo web utilizando <span class="text-primary">Python y JavaScript.</span> 
+              Destaco por mi capacidad para enseñar y servir como mentor, experiencia que he puesto en práctica como <span class="text-primary">docente y tutor de programación. </span>
+              Actualmente, me encuentro trabajando en proyectos personales y colaborando con empresas en el desarrollo de aplicaciones web.
+            </p>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Skills Section -->
+      <section id="skills" class="px-4 py-6 md:mx-32">
+        <h2 class="text-primary text-xl font-normal md:text-2xl text-center py-2 mb-2 uppercase">
+          Skills
+        </h2>
+        <div class="flex flex-wrap justify-around">
+          <div class="w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 p-2 flex flex-col items-center transition-transform hover:scale-110">
+            <div class="bg-white rounded-full p-4 flex items-center justify-center shadow-md " style="width: 64px; height: 64px;">
+              <img src="svg/python.svg" alt="python" class="w-full h-full" />
+            </div>
+            <p class="text-center font-extralight text-sm mt-2">python</p>
+          </div>
+          <div class="w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 p-2 flex flex-col items-center transition-transform hover:scale-110">
+            <div class="bg-white rounded-full p-4 flex items-center justify-center shadow-md " style="width: 64px; height: 64px;">
+              <img src="svg/fastapi.svg" alt="fastapi" class="w-full h-full" />
+            </div>
+            <p class="text-center font-extralight text-sm mt-2">fastapi</p>
+          </div>
+          <div class="w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 p-2 flex flex-col items-center transition-transform hover:scale-110">
+            <div class="bg-white rounded-full p-4 flex items-center justify-center shadow-md " style="width: 64px; height: 64px;">
+              <img src="svg/js.svg" alt="js" class="w-full h-full" />
+            </div>
+            <p class="text-center font-extralight text-sm mt-2">javascript</p>
+          </div>
+          <div class="w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 p-2 flex flex-col items-center transition-transform hover:scale-110">
+            <div class="bg-white rounded-full p-4 flex items-center justify-center shadow-md " style="width: 64px; height: 64px;">
+              <img src="svg/mongo.svg" alt="mongodb" class="w-full h-full" />
+            </div>
+            <p class="text-center font-extralight text-sm mt-2">mongodb</p>
+          </div>
+          <div class="w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 p-2 flex flex-col items-center transition-transform hover:scale-110">
+            <div class="bg-white rounded-full p-4 flex items-center justify-center shadow-md " style="width: 64px; height: 64px;">
+              <img src="svg/sql.svg" alt="mssql" class="w-full h-full" />
+            </div>
+            <p class="text-center font-extralight text-sm mt-2">sql-server</p>
+          </div>
+          <div class="w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 p-2 flex flex-col items-center transition-transform hover:scale-110">
+            <div class="bg-white rounded-full p-4 flex items-center justify-center shadow-md " style="width: 64px; height: 64px;">
+              <img src="svg/git.svg" alt="git" class="w-full h-full" />
+            </div>
+            <p class="text-center font-extralight text-sm mt-2">git</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="experiencia" class="px-4 py-6 md:px-16 md:py-10">
+        <h2 class="text-primary text-xl font-normal md:text-2xl text-center py-2 mb-2 uppercase ">Experiencia Laboral</h2>
+        <div class="flex flex-col md:flex-row md:justify-center">
+          <div class="w-full md:w-1/12 flex justify-center md:pr-8">
+            <div class="h-full w-1 bg-primary"></div>
+          </div>
+          <div class="w-full md:w-11/12">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+              
+              <!-- JimcostDev -->
+              <div class="bg-white rounded-lg shadow-md p-6 mb-6 md:mb-0">
+                <h3 class="text-lg font-semibold">JimcostDev</h3>
+                <p class="text-primary">Backend Developer . [Remoto] </p>
+                <p>dic. 2023 - presente</p>
+                <p class="text-primary">(7 meses)</p>
+                <button class="toggle-details text-sm text-primary mt-4 flex items-center">
+                  <i class="fas fa-plus-circle mr-1"></i> Ver más
+                </button>
+                <div class="extra-details hidden mt-4">
+                  <p> Desarrollo de APIs con Python, FastAPI y desarrollo de aplicaciones web. 
+                  </p>
+                </div>
+              </div>
+              
+              <!-- Freelance -->
+              <div class="bg-white rounded-lg shadow-md p-6 mb-6 md:mb-0">
+                <h3 class="text-lg font-semibold">JimcostDev</h3>
+                <p class="text-primary">Docente de programación . [Remoto] </p>
+                <p>oct. 2022 - presente</p>
+                <p class="text-primary">(1 año y 9 meses)</p>
+                <button class="toggle-details text-sm text-primary mt-4 flex items-center">
+                  <i class="fas fa-plus-circle mr-1"></i> Ver más
+                </button>
+                <div class="extra-details hidden mt-4">
+                  <p>Clases y tutoriales sobre programación y desarrollo de software con Python, Javascript y Java.</p>
+                </div>
+              </div>
+              
+              <!-- UTAP -->
+              <div class="bg-white rounded-lg shadow-md p-6 mb-6 md:mb-0">
+                <h3 class="text-lg font-semibold">UTAP</h3>
+                <p class="text-primary">Backend Developer . [Cali, Colombia]</p>
+                <p>abr. 2021 - marz. 2022</p>
+                <p class="text-primary">(11 meses)</p>
+                <button class="toggle-details text-sm text-primary mt-4 flex items-center">
+                  <i class="fas fa-plus-circle mr-1"></i> Ver más
+                </button>
+                <div class="extra-details hidden mt-4">
+                  <p>Desarrollé nuevas funcionalidades tanto en aplicaciones web como de escritorio utilizando .NET y C#, realizando también labores de mantenimiento en la base de datos con SQL Server. Además, colaboré en equipo para concebir y lanzar la plataforma de egresados de la institución, empleando tecnologías como .NET y Javascript.</p>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      
+      
+      
+      
+      <section id="estudios" class="px-4 py-6 md:px-16 md:py-10">
+        <h2 class="text-primary text-xl font-normal md:text-2xl text-center py-2 mb-2 uppercase">Estudios</h2>
+        <div class="flex justify-center mb-5">
+          <div class="bg-white rounded-lg shadow-md p-4 flex items-center">
+            <div class="flex items-center mr-4">
+              <div class="w-4 h-4 bg-yellow-500 rounded-full mr-2"></div>
+              <span class="text-primary font-semibold">Grado</span>
+            </div>
+            <div class="flex items-center">
+              <div class="w-4 h-4 bg-green-500 rounded-full mr-2"></div>
+              <span class="text-primary font-semibold">Certificación</span>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col md:flex-row md:justify-center">
+          <div class="w-full md:w-1/12 flex justify-center md:pr-8">
+            <div class="h-full w-1 bg-primary"></div>
+          </div>
+          <div class="w-full md:w-11/12">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+              
+              <!-- Certificación -->
+              <div class="relative mb-6 md:mb-0">
+                <div class="absolute right-5 top-2 w-4 h-4 bg-green-500 rounded-full"></div>
+                <div class="bg-white rounded-lg shadow-md p-6 pl-10">
+                  <h3 class="text-lg font-semibold">MongoDB</h3>
+                  <p>MongoDB Associate Developer</p>
+                  <a href="https://www.credly.com/badges/e537a319-3e5b-456a-ac82-31c04834f30a/linked_in_profile" target="_blank" class="text-sm text-primary flex items-center mt-2">
+                    <i class="fas fa-link mr-1"></i> Ver Certificado
+                  </a>
+                </div>
+              </div>
+
+                <!-- Certificación -->
+                <div class="relative mb-6 md:mb-0">
+                  <div class="absolute right-5 top-2 w-4 h-4 bg-green-500 rounded-full"></div>
+                  <div class="bg-white rounded-lg shadow-md p-6 pl-10">
+                    <h3 class="text-lg font-semibold">Microsoft</h3>
+                    <p>Azure Fundamentals</p>
+                    <a href="https://www.credly.com/badges/e8c1f177-3d1f-4496-9461-1b468ed30b4b/public_url" target="_blank" class="text-sm text-primary flex items-center mt-2">
+                      <i class="fas fa-link mr-1"></i> Ver Certificado
+                    </a>
+                  </div>
+                </div>
+
+                <!-- Grado -->
+              <div class="relative mb-6 md:mb-0">
+                <div class="absolute right-5 top-2 w-4 h-4 bg-yellow-500 rounded-full"></div>
+                <div class="bg-white rounded-lg shadow-md p-6 pl-10">
+                  <h3 class="text-lg font-semibold">UNIR</h3>
+                  <p class="text-primary">Ingenieria en Informática</p>
+                  <p>2025</p>
+                </div>
+              </div>
+
+              <!-- Certificación -->
+              <div class="relative mb-6 md:mb-0">
+                <div class="absolute right-5 top-2 w-4 h-4 bg-green-500 rounded-full"></div>
+                <div class="bg-white rounded-lg shadow-md p-6 pl-10">
+                  <h3 class="text-lg font-semibold">Platzi</h3>
+                  <p>Estudiante activo en Platzi</p>
+                  <a href="https://platzi.com/p/JimcostDev/" target="_blank" class="text-sm text-primary flex items-center mt-2">
+                    <i class="fas fa-link mr-1"></i> Ver Perfil
+                  </a>
+                </div>
+              </div>
+              
+              <!-- mas estudios -->
+              
+            </div>
+          </div>
+        </div>
+      </section>
+      
+
+      <section id="proyectos" class="px-4 py-6 mb-4">
+        <h2 class="text-primary text-xl font-normal md:text-2xl text-center py-2 mb-2 uppercase">Proyectos</h2>
+        <div class="projects-container relative overflow-hidden w-full max-w-4xl mx-auto">
+          <div id="projectCarousel" class="flex transition-transform duration-500">
+            <div class="project bg-cover bg-center h-64 md:h-96 w-full  relative flex-shrink-0 rounded-lg overflow-hidden bg-BACKGROUND_MOBILE md:bg-BACKGROUND_DESKTOP">
+              <div class="project-overlay absolute inset-0 bg-gradient-to-t from-black via-transparent to-black flex flex-col justify-center items-center text-center text-white p-4">
+                <h3 class="text-2xl font-normal mb-2">Python Programming Fundamentals</h3>
+                <p class="mb-4 font-light">Mi curso de fundamentos de programación y python</p>
+                <div class="hashtags flex flex-wrap justify-center space-x-2">
+                  <span class="hashtag bg-gray-800 rounded-full px-3 py-1 text-sm  hover:text-primary">#lógica</span>
+                  <span class="hashtag bg-gray-800 rounded-full px-3 py-1 text-sm  hover:text-primary">#algoritmos</span>
+                  <span class="hashtag bg-gray-800 rounded-full px-3 py-1 text-sm  hover:text-primary">#python</span>
+                </div>
+                <a href="https://github.com/JimcostDev/python_programming_fundamentals" target="_blank" class="mt-4 text-primary  hover:text-secondary bg-gray-800 rounded-full px-3 py-1 text-sm inline-flex items-center">
+                  <i class="fas fa-link mr-1"></i> Ver Proyecto
+                </a>
+              </div>
+            </div>
+
+            <div class="project bg-cover bg-center h-64 md:h-96 w-full  relative flex-shrink-0 rounded-lg overflow-hidden bg-BACKGROUND_MOBILE md:bg-BACKGROUND_DESKTOP">
+              <div class="project-overlay absolute inset-0 bg-gradient-to-t from-black via-transparent to-black flex flex-col justify-center items-center text-center text-white p-4">
+                <h3 class="text-2xl font-normal mb-2">Portafolio JimcostDev</h3>
+                <p class="mb-4 font-light">Bienvenido a mi portafolio web. Descubre más sobre mí y mi trabajo</p>
+                <div class="hashtags flex flex-wrap justify-center space-x-2">
+                  <span class="hashtag bg-gray-800 rounded-full px-3 py-1 text-sm  hover:text-primary">#figma</span>
+                  <span class="hashtag bg-gray-800 rounded-full px-3 py-1 text-sm  hover:text-primary">#tailwindcss</span>
+                  <span class="hashtag bg-gray-800 rounded-full px-3 py-1 text-sm  hover:text-primary">#javascript</span>
+                </div>
+                <a href="#" class="mt-4 text-primary  hover:text-secondary bg-gray-800 rounded-full px-3 py-1 text-sm inline-flex items-center">
+                  <i class="fas fa-link mr-1"></i> Ver Proyecto
+                </a>
+              </div>
+            </div>
+
+            <div class="project bg-cover bg-center h-64 md:h-96 w-full relative flex-shrink-0 rounded-lg overflow-hidden  bg-BACKGROUND_MOBILE md:bg-BACKGROUND_DESKTOP">
+              <div class="project-overlay absolute inset-0 bg-gradient-to-t from-black via-transparent to-black flex flex-col justify-center items-center text-center text-white p-4">
+                <h3 class="text-2xl font-normal mb-2">JimcostDev API</h3>
+                <p class="mb-4 font-light">API para gestionar CVs y portafolios</p>
+                <div class="hashtags flex flex-wrap justify-center space-x-2">
+                  <span class="hashtag bg-gray-800 rounded-full px-3 py-1 text-sm  hover:text-primary">#python</span>
+                  <span class="hashtag bg-gray-800 rounded-full px-3 py-1 text-sm  hover:text-primary">#fastapi</span>
+                  <span class="hashtag bg-gray-800 rounded-full px-3 py-1 text-sm  hover:text-primary">#mongodb</span>
+                </div>
+                <a href="https://github.com/JimcostDev/jimcostdev_api" target="_blank" class="mt-4 text-primary hover:text-secondary bg-gray-800 rounded-full px-3 py-1 text-sm inline-flex items-center">
+                  <i class="fas fa-link mr-1"></i> Ver Proyecto
+                </a>
+              </div>
+            </div>
+            <!-- Agrega más tarjetas de proyecto según sea necesario -->
+          </div>
+          <button id="prevBtn" class="absolute left-2 top-1/2 transform -translate-y-1/2 bg-primary text-white p-2 rounded-full">
+            <i class="fas fa-chevron-left"></i>
           </button>
-          <h3 class="sect-title">Servicios</h3>
+          <button id="nextBtn" class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-primary text-white p-2 rounded-full">
+            <i class="fas fa-chevron-right"></i>
+          </button>
         </div>
-      </div>
+      </section>
+      
+    
+    </main>
 
-      <div class="container-fluid collapse" id="services-content">
-        <div
-          class="card-container d-flex flex-wrap justify-content-around align-items-center"
-        >
-          <div class="card">
-            <div class="card-body">
-                <img class="card-img-top"  src="img/s-web.jpg" alt="">
-              <!-- <h5 class="card-title">Soporte técnico</h5>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">Ensamble y mantenimiento de ordenadores.</li>
-                <li class="list-group-item">Copias de seguridad y recuperación de información.</li>
-                <li class="list-group-item">Instalación y configuración de software.</li>
-              </ul> -->
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-body">
-              <img class="card-img-top" src="img/s-tecnico.jpg" alt="">
-              <!-- <h5 class="card-title">Desarrollo Web</h5>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">Creación y publicación de sitios web.</li>
-                <li class="list-group-item">Desarrollo de aplicaciones web.</li>
-              </ul> -->
-            </div>
-          </div>
-          <div class="card d-flex">
-            <div class="card-body">
-              <img class="card-img-top" src="img/s-clases.jpg" alt="">
-              <!-- <h5 class="card-title">Clases y tutorías</h5>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">Fundamentos de programación.</li>
-                <li class="list-group-item">Programación en C# y Python.</li>
-                <li class="list-group-item">Base de datos relacionales en Microsoft SQL Server.</li>
-                <li class="list-group-item">Clases de informática general.</li>
-              </ul> -->
-            </div>
+    <footer class="bg-BACKGROUND_MOBILE md:bg-BACKGROUND_DESKTOP bg-cover text-tertiary py-6 pb-20">
+      <div class="footer-content text-center ">
+        <div class="logo mb-4">
+          <img src="svg/jimcostdev-negativo.svg" alt="Logo" width="128" height="128" class="mx-auto"/>
+        </div>
+        <div class="quote mb-4 px-4">
+          <p class="text-base italic">"Ponte un blanco alto y haz fervientes esfuerzos por alcanzarlo y no te desanimes" EGW</p>
+        </div>
+        <div class="footer-bottom">
+          <p class="text-sm mb-2">Hecho con 🤍 - © Ronaldo Jiménez 2024</p>
+          <!-- Redes sociales -->
+          <div class="mb-2 text-2xl">
+            <a href="https://www.linkedin.com/in/ronaldo-jimenez" target="_blank" class="mr-2 inline-block transition-transform hover:scale-110 hover:text-secondary">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/JimcostDev" target="_blank" class="mr-2 inline-block transition-transform hover:scale-110 hover:text-secondary">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.youtube.com/@jimcostdev" target="_blank" class="inline-block transition-transform hover:scale-110 hover:text-secondary">
+              <i class="fab fa-youtube"></i>
+            </a>
           </div>
         </div>
       </div>
-    </section>
-    <!-- ./Services -->
+    </footer>
+    
+    <script>
+      // Toggle extra details
+      document.addEventListener('DOMContentLoaded', () => {
+    const toggleButtons = document.querySelectorAll('.toggle-details');
+    
+    toggleButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const extraDetails = button.nextElementSibling;
+        if (extraDetails.classList.contains('hidden')) {
+          extraDetails.classList.remove('hidden');
+          button.innerHTML = '<i class="fas fa-minus-circle mr-1"></i> Ver menos';
+        } else {
+          extraDetails.classList.add('hidden');
+          button.innerHTML = '<i class="fas fa-plus-circle mr-1"></i> Ver más';
+        }
+      });
+    });
+  });
 
-    <!-- JavaScript -->
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
-      integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
-      crossorigin="anonymous"
-    ></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
+  // Función para copiar el correo electrónico al portapapeles
+      function toggleCopyIcon() {
+          const email = document.getElementById("email");
+          const copiedMessage = document.getElementById("copiedMessage");
+  
+          // Crear elemento temporal y copiar el texto al portapapeles
+          const tempInput = document.createElement("textarea");
+          tempInput.value = email.textContent;
+          document.body.appendChild(tempInput);
+          tempInput.select();
+          document.execCommand("copy");
+          document.body.removeChild(tempInput);
+  
+          // Ocultar el mensaje después de un tiempo (por ejemplo, 1 segundo)
+          setTimeout(() => {
+              copiedMessage.classList.add("hidden");
+              document.getElementById("icon").classList.remove("fa-check");
+              document.getElementById("icon").classList.add("fa-copy");
+          }, 1000); // 1000 milisegundos = 1 segundo
+  
+          // Mostrar el mensaje de "Copiado" y cambiar el icono a check
+          copiedMessage.classList.remove("hidden");
+          document.getElementById("icon").classList.remove("fa-copy");
+      }
+
+    // Carousel Logic
+    const projectCarousel = document.getElementById('projectCarousel');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    let currentIndex = 0;
+
+    prevBtn.addEventListener('click', () => {
+      if (currentIndex > 0) {
+        currentIndex--;
+      } else {
+        currentIndex = projectCarousel.children.length - 1;
+      }
+      updateCarousel();
+    });
+
+    nextBtn.addEventListener('click', () => {
+      if (currentIndex < projectCarousel.children.length - 1) {
+        currentIndex++;
+      } else {
+        currentIndex = 0;
+      }
+      updateCarousel();
+    });
+
+    function updateCarousel() {
+      const offset = -currentIndex * 100;
+      projectCarousel.style.transform = `translateX(${offset}%)`;
+    }
+    </script>
+    
   </body>
 </html>
