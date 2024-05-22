@@ -43,23 +43,23 @@
       <!-- Barra de navegación fija en la parte inferior para móvil, en la parte superior para escritorio -->
       <nav id="navegacion" class="fixed bottom-0 left-0 w-full shadow-sm bg-secondary text-tertiary py-3 z-50  md:top-0 md:bottom-auto ">
         <div class="container mx-auto md:w-3/4 flex justify-between items-center px-4 md:px-0 md:space-x-4">
-          <a href="#" class="flex items-center text-xl space-x-2 md:text-lg transition-transform hover:scale-110 hover:text-primary">
+          <a href="#" class="flex items-center text-md space-x-2 lg:text-lg transition-transform hover:scale-110 hover:text-primary">
             <i class="fas fa-home"></i>
             <span class="hidden md:inline">Inicio</span>
           </a>
-          <a href="#sobre-mi" class="flex items-center text-xl space-x-2 md:text-lg transition-transform hover:scale-110 hover:text-primary">
+          <a href="#sobre-mi" class="flex items-center text-md space-x-2 lg:text-lg transition-transform hover:scale-110 hover:text-primary">
             <i class="fas fa-user"></i>
             <span class="hidden md:inline">Sobre mí</span>
           </a>
-          <a href="#experiencia" class="flex items-center text-xl space-x-2 md:text-lg transition-transform hover:scale-110 hover:text-primary">
+          <a href="#experiencia" class="flex items-center text-md space-x-2 lg:text-lg transition-transform hover:scale-110 hover:text-primary">
             <i class="fas fa-briefcase"></i>
             <span class="hidden md:inline">Experiencia</span>
           </a>
-          <a href="#estudios" class="flex items-center text-xl space-x-2 md:text-lg transition-transform hover:scale-110 hover:text-primary">
+          <a href="#estudios" class="flex items-center text-md space-x-2 lg:text-lg transition-transform hover:scale-110 hover:text-primary">
             <i class="fas fa-graduation-cap"></i>
             <span class="hidden md:inline">Estudios</span>
           </a>
-          <a href="#proyectos" class="flex items-center text-xl space-x-2 md:text-lg transition-transform hover:scale-110 hover:text-primary">
+          <a href="#proyectos" class="flex items-center text-md space-x-2 lg:text-lg transition-transform hover:scale-110 hover:text-primary">
             <i class="fas fa-laptop-code"></i>
             <span class="hidden md:inline">Proyectos</span>
           </a>
@@ -83,7 +83,7 @@
         <div class="flex flex-col items-center justify-between mt-1 px-8">
           <p class="text-lg md:text-2xl font-medium mb-2">SOFTWARE DEVELOPER</p>
           <!-- Redes sociales -->
-          <div class="mb-2 text-2xl">
+          <div class="mb-2 text-xl lg:text-2xl">
             <a href="https://www.linkedin.com/in/ronaldo-jimenez" target="_blank" class="mr-2 inline-block transition-transform hover:scale-110 hover:text-secondary">
               <i class="fab fa-linkedin"></i>
             </a>
@@ -313,10 +313,28 @@
         <h2 class="text-primary text-xl font-normal md:text-2xl text-center py-2 mb-2 uppercase">Proyectos</h2>
         <div class="projects-container relative overflow-hidden w-full max-w-4xl mx-auto">
           <div id="projectCarousel" class="flex transition-transform duration-500">
+
+            <div class="project bg-cover bg-center h-64 md:h-96 w-full  relative flex-shrink-0 rounded-lg overflow-hidden bg-BACKGROUND_MOBILE md:bg-BACKGROUND_DESKTOP">
+              <div class="project-overlay absolute inset-0 bg-gradient-to-t from-black via-transparent to-black flex flex-col justify-center items-center text-center text-white p-4">
+                <h3 class="text-2xl font-normal mb-2">Canal de YouTube</h3>
+                <p class="mb-4 font-light">Programación y desarrollo de software: aprende con tutoriales, desafíos y proyectos.</p>
+                <div class="hashtags flex flex-wrap justify-center space-x-2">
+                  <span class="hashtag bg-gray-800 rounded-full px-3 py-1 text-sm  hover:text-primary">#python</span>
+                  <span class="hashtag bg-gray-800 rounded-full px-3 py-1 text-sm  hover:text-primary">#javascript</span>
+                  <span class="hashtag bg-gray-800 rounded-full px-3 py-1 text-sm  hover:text-primary">#t-sql</span>
+                  <span class="hashtag bg-gray-800 rounded-full px-3 py-1 text-sm  hover:text-primary">#mongodb</span>
+                  <span class="hashtag bg-gray-800 rounded-full px-3 py-1 text-sm  hover:text-primary">#git</span>
+                </div>
+                <a href="https://www.youtube.com/@jimcostdev" target="_blank" class="mt-4 text-primary  hover:text-secondary bg-gray-800 rounded-full px-3 py-1 text-sm inline-flex items-center">
+                  <i class="fas fa-link mr-1"></i> Ver Proyecto
+                </a>
+              </div>
+            </div>
+
             <div class="project bg-cover bg-center h-64 md:h-96 w-full  relative flex-shrink-0 rounded-lg overflow-hidden bg-BACKGROUND_MOBILE md:bg-BACKGROUND_DESKTOP">
               <div class="project-overlay absolute inset-0 bg-gradient-to-t from-black via-transparent to-black flex flex-col justify-center items-center text-center text-white p-4">
                 <h3 class="text-2xl font-normal mb-2">Python Programming Fundamentals</h3>
-                <p class="mb-4 font-light">Mi curso de fundamentos de programación y python</p>
+                <p class="mb-4 font-light">Mi curso sobre fundamentos de programación y python.</p>
                 <div class="hashtags flex flex-wrap justify-center space-x-2">
                   <span class="hashtag bg-gray-800 rounded-full px-3 py-1 text-sm  hover:text-primary">#lógica</span>
                   <span class="hashtag bg-gray-800 rounded-full px-3 py-1 text-sm  hover:text-primary">#algoritmos</span>
@@ -330,14 +348,29 @@
 
             <div class="project bg-cover bg-center h-64 md:h-96 w-full  relative flex-shrink-0 rounded-lg overflow-hidden bg-BACKGROUND_MOBILE md:bg-BACKGROUND_DESKTOP">
               <div class="project-overlay absolute inset-0 bg-gradient-to-t from-black via-transparent to-black flex flex-col justify-center items-center text-center text-white p-4">
-                <h3 class="text-2xl font-normal mb-2">Portafolio JimcostDev</h3>
-                <p class="mb-4 font-light">Bienvenido a mi portafolio web. Descubre más sobre mí y mi trabajo</p>
+                <h3 class="text-2xl font-normal mb-2">JimcostDev Portafolio</h3>
+                <p class="mb-4 font-light">Bienvenido a mi portafolio web. Descubre más sobre mí y mi trayectoria profesional.</p>
                 <div class="hashtags flex flex-wrap justify-center space-x-2">
                   <span class="hashtag bg-gray-800 rounded-full px-3 py-1 text-sm  hover:text-primary">#figma</span>
                   <span class="hashtag bg-gray-800 rounded-full px-3 py-1 text-sm  hover:text-primary">#tailwindcss</span>
                   <span class="hashtag bg-gray-800 rounded-full px-3 py-1 text-sm  hover:text-primary">#javascript</span>
                 </div>
-                <a href="#" class="mt-4 text-primary  hover:text-secondary bg-gray-800 rounded-full px-3 py-1 text-sm inline-flex items-center">
+                <a href="https://github.com/JimcostDev/jimcostdev-oficial" target="_blank" class="mt-4 text-primary  hover:text-secondary bg-gray-800 rounded-full px-3 py-1 text-sm inline-flex items-center">
+                  <i class="fas fa-link mr-1"></i> Ver Proyecto
+                </a>
+              </div>
+            </div>
+
+            <div class="project bg-cover bg-center h-64 md:h-96 w-full relative flex-shrink-0 rounded-lg overflow-hidden  bg-BACKGROUND_MOBILE md:bg-BACKGROUND_DESKTOP">
+              <div class="project-overlay absolute inset-0 bg-gradient-to-t from-black via-transparent to-black flex flex-col justify-center items-center text-center text-white p-4">
+                <h3 class="text-2xl font-normal mb-2">JimcostDev CV</h3>
+                <p class="mb-4 font-light">Este es mi sitio web diseñado como un currículum. También puedes descargarlo en formato PDF.</p>
+                <div class="hashtags flex flex-wrap justify-center space-x-2">
+                  <span class="hashtag bg-gray-800 rounded-full px-3 py-1 text-sm  hover:text-primary">#html</span>
+                  <span class="hashtag bg-gray-800 rounded-full px-3 py-1 text-sm  hover:text-primary">#sass</span>
+                  <span class="hashtag bg-gray-800 rounded-full px-3 py-1 text-sm  hover:text-primary">#javascript</span>
+                </div>
+                <a href="https://jimcostdev.github.io/CV_JimcostDev/" target="_blank" class="mt-4 text-primary hover:text-secondary bg-gray-800 rounded-full px-3 py-1 text-sm inline-flex items-center">
                   <i class="fas fa-link mr-1"></i> Ver Proyecto
                 </a>
               </div>
@@ -346,7 +379,7 @@
             <div class="project bg-cover bg-center h-64 md:h-96 w-full relative flex-shrink-0 rounded-lg overflow-hidden  bg-BACKGROUND_MOBILE md:bg-BACKGROUND_DESKTOP">
               <div class="project-overlay absolute inset-0 bg-gradient-to-t from-black via-transparent to-black flex flex-col justify-center items-center text-center text-white p-4">
                 <h3 class="text-2xl font-normal mb-2">JimcostDev API</h3>
-                <p class="mb-4 font-light">API para gestionar CVs y portafolios</p>
+                <p class="mb-4 font-light">API para gestionar CVs y portafolios.</p>
                 <div class="hashtags flex flex-wrap justify-center space-x-2">
                   <span class="hashtag bg-gray-800 rounded-full px-3 py-1 text-sm  hover:text-primary">#python</span>
                   <span class="hashtag bg-gray-800 rounded-full px-3 py-1 text-sm  hover:text-primary">#fastapi</span>
@@ -382,7 +415,7 @@
         <div class="footer-bottom">
           <p class="text-sm mb-2">Hecho con 🤍 - © Ronaldo Jiménez 2024</p>
           <!-- Redes sociales -->
-          <div class="mb-2 text-2xl">
+          <div class="mb-2 text-xl lg:text-2xl">
             <a href="https://www.linkedin.com/in/ronaldo-jimenez" target="_blank" class="mr-2 inline-block transition-transform hover:scale-110 hover:text-secondary">
               <i class="fab fa-linkedin"></i>
             </a>
