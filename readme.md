@@ -1,10 +1,5 @@
-## compilar 
+## Ver proyecto:
 
-```js
-npx tailwindcss -i ./src/input.css -o ./src/output.css --watch
-
-npm run tw:build
-```
-
+https://www.jimcostdev.com/
 
 
