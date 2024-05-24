@@ -7,6 +7,7 @@ module.exports = {
       backgroundImage: {
         BACKGROUND_DESKTOP: "url('img/BACKGROUND_DESKTOP.webp')",
         BACKGROUND_MOBILE: "url('img/BACKGROUND_MOBILE.webp')",
+        BACKGROUND_PROJECT: "url('img/BACKGROUND_PROJECT.jpg')",
       },
       backgroundColor: (theme) => ({
         ...theme("colors"),
@@ -35,10 +36,6 @@ module.exports = {
       },
       
     },
-  },
-  variants: {
-    width: ["responsive", "hover", "focus"],
-    extend: {},
   },
   plugins: [
     require('@tailwindcss/typography')

@@ -112,7 +112,7 @@
         <h2 class="Title">
           Sobre mí
         </h2>
-        <div class="bg-white shadow-md rounded-2xl p-6 text-center w-full md:w-4/5 md:px-24">
+        <div class="bg-white shadow-md rounded-2xl p-6 text-center w-full md:w-4/5 md:px-24 transition-transform hover:scale-95 hover:shadow-lg duration-1000">
           <div class="border-b border-gray-300 mb-4 pb-4">
             <p class="mb-2"> Soy de <span class="text-primary"> Cali, Colombia 🇨🇴</span> </p>
             <p class="mb-2"> Vivo en <span class="text-primary"> Mallorca, España 🇪🇸 </span></p>
@@ -183,7 +183,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
               
               <!-- JimcostDev -->
-              <div class="bg-white rounded-lg shadow-md p-6 mb-6 md:mb-0">
+              <div class="Experience-Card">
                 <h3 class="text-lg font-semibold">JimcostDev</h3>
                 <p class="text-primary">Backend Developer . [Remoto] </p>
                 <p>dic. 2023 - presente</p>
@@ -198,7 +198,7 @@
               </div>
               
               <!-- Freelance -->
-              <div class="bg-white rounded-lg shadow-md p-6 mb-6 md:mb-0">
+              <div class="Experience-Card">
                 <h3 class="text-lg font-semibold">JimcostDev</h3>
                 <p class="text-primary">Docente de programación . [Remoto] </p>
                 <p>oct. 2022 - presente</p>
@@ -212,7 +212,7 @@
               </div>
               
               <!-- UTAP -->
-              <div class="bg-white rounded-lg shadow-md p-6 mb-6 md:mb-0">
+              <div class="Experience-Card">
                 <h3 class="text-lg font-semibold">UTAP</h3>
                 <p class="text-primary">Backend Developer . [Cali, Colombia]</p>
                 <p>abr. 2021 - marz. 2022</p>
@@ -258,7 +258,7 @@
               <!-- Certificación -->
               <div class="relative mb-6 md:mb-0">
                 <div class="absolute right-5 top-2 w-4 h-4 bg-green-500 rounded-full"></div>
-                <div class="bg-white rounded-lg shadow-md p-6 pl-10">
+                <div class="Study-Card">
                   <h3 class="text-lg font-semibold">MongoDB</h3>
                   <p>MongoDB Associate Developer</p>
                   <a href="https://www.credly.com/badges/e537a319-3e5b-456a-ac82-31c04834f30a/linked_in_profile" target="_blank" class="text-sm text-primary flex items-center mt-2">
@@ -270,7 +270,7 @@
                 <!-- Certificación -->
                 <div class="relative mb-6 md:mb-0">
                   <div class="absolute right-5 top-2 w-4 h-4 bg-green-500 rounded-full"></div>
-                  <div class="bg-white rounded-lg shadow-md p-6 pl-10">
+                  <div class="Study-Card">
                     <h3 class="text-lg font-semibold">Microsoft</h3>
                     <p>Azure Fundamentals</p>
                     <a href="https://www.credly.com/badges/e8c1f177-3d1f-4496-9461-1b468ed30b4b/public_url" target="_blank" class="text-sm text-primary flex items-center mt-2">
@@ -282,7 +282,7 @@
                 <!-- Grado -->
               <div class="relative mb-6 md:mb-0">
                 <div class="absolute right-5 top-2 w-4 h-4 bg-yellow-500 rounded-full"></div>
-                <div class="bg-white rounded-lg shadow-md p-6 pl-10">
+                <div class="Study-Card">
                   <h3 class="text-lg font-semibold">UNIR</h3>
                   <p class="text-primary">Ingenieria en Informática</p>
                   <p>2025</p>
@@ -292,7 +292,7 @@
               <!-- Certificación -->
               <div class="relative mb-6 md:mb-0">
                 <div class="absolute right-5 top-2 w-4 h-4 bg-green-500 rounded-full"></div>
-                <div class="bg-white rounded-lg shadow-md p-6 pl-10">
+                <div class="Study-Card">
                   <h3 class="text-lg font-semibold">Platzi</h3>
                   <p>Estudiante activo en Platzi</p>
                   <a href="https://platzi.com/p/JimcostDev/" target="_blank" class="text-sm text-primary flex items-center mt-2">
@@ -316,78 +316,78 @@
 
             <div class="project bg-cover bg-center h-64 md:h-96 w-full  relative flex-shrink-0 rounded-lg overflow-hidden bg-BACKGROUND_MOBILE md:bg-BACKGROUND_DESKTOP">
               <div class="project-overlay absolute inset-0 bg-gradient-to-t from-black via-transparent to-black flex flex-col justify-center items-center text-center text-white p-4">
-                <h3 class="text-2xl font-normal mb-2">Canal de YouTube</h3>
-                <p class="mb-4 font-light">Programación y desarrollo de software: aprende con tutoriales, desafíos y proyectos.</p>
-                <div class="hashtags flex flex-wrap justify-center space-x-2">
-                  <span class="hashtag bg-gray-800 rounded-full px-3 py-1 text-sm  hover:text-primary mb-2">#python</span>
-                  <span class="hashtag bg-gray-800 rounded-full px-3 py-1 text-sm  hover:text-primary mb-2">#javascript</span>
-                  <span class="hashtag bg-gray-800 rounded-full px-3 py-1 text-sm  hover:text-primary mb-2">#t-sql</span>
-                  <span class="hashtag bg-gray-800 rounded-full px-3 py-1 text-sm  hover:text-primary mb-2">#mongodb</span>
-                  <span class="hashtag bg-gray-800 rounded-full px-3 py-1 text-sm  hover:text-primary mb-2">#git</span>
-                </div>
-                <a href="https://www.youtube.com/@jimcostdev" target="_blank" class="mt-4 text-primary  hover:text-secondary bg-gray-800 rounded-full px-3 py-1 text-sm inline-flex items-center">
-                  <i class="fas fa-link mr-1"></i> Ver Proyecto
+                <a href="https://www.youtube.com/@jimcostdev" target="_blank" class="Project-Btn">
+                  <i class="fas fa-external-link-alt"></i>
                 </a>
+                <h3 class="Project-Title">Canal de YouTube</h3>
+                <p class="Project-Description">Programación y desarrollo de software: aprende con tutoriales, desafíos y proyectos.</p>
+                <div class="hashtags flex flex-wrap justify-center space-x-2">
+                  <span class="Hashtag-Btn">#python</span>
+                  <span class="Hashtag-Btn">#javascript</span>
+                  <span class="Hashtag-Btn">#t-sql</span>
+                  <span class="Hashtag-Btn">#mongodb</span>
+                  <span class="Hashtag-Btn">#git</span>
+                </div>
               </div>
             </div>
 
             <div class="project bg-cover bg-center h-64 md:h-96 w-full  relative flex-shrink-0 rounded-lg overflow-hidden bg-BACKGROUND_MOBILE md:bg-BACKGROUND_DESKTOP">
               <div class="project-overlay absolute inset-0 bg-gradient-to-t from-black via-transparent to-black flex flex-col justify-center items-center text-center text-white p-4">
-                <h3 class="text-2xl font-normal mb-2">Python Programming Fundamentals</h3>
-                <p class="mb-4 font-light">Mi curso sobre fundamentos de programación y python.</p>
-                <div class="hashtags flex flex-wrap justify-center space-x-2">
-                  <span class="hashtag bg-gray-800 rounded-full px-3 py-1 text-sm  hover:text-primary">#lógica</span>
-                  <span class="hashtag bg-gray-800 rounded-full px-3 py-1 text-sm  hover:text-primary">#algoritmos</span>
-                  <span class="hashtag bg-gray-800 rounded-full px-3 py-1 text-sm  hover:text-primary">#python</span>
-                </div>
-                <a href="https://github.com/JimcostDev/python_programming_fundamentals" target="_blank" class="mt-4 text-primary  hover:text-secondary bg-gray-800 rounded-full px-3 py-1 text-sm inline-flex items-center">
-                  <i class="fas fa-link mr-1"></i> Ver Proyecto
+                <a href="https://github.com/JimcostDev/python_programming_fundamentals" target="_blank" class="Project-Btn">
+                  <i class="fas fa-external-link-alt"></i>
                 </a>
+                <h3 class="Project-Title">Python Fundamentals</h3>
+                <p class="Project-Description">Mi curso sobre fundamentos de programación y python.</p>
+                <div class="hashtags flex flex-wrap justify-center space-x-2">
+                  <span class="Hashtag-Btn">#lógica</span>
+                  <span class="Hashtag-Btn">#algoritmos</span>
+                  <span class="Hashtag-Btn">#python</span>
+                </div>
               </div>
             </div>
 
             <div class="project bg-cover bg-center h-64 md:h-96 w-full  relative flex-shrink-0 rounded-lg overflow-hidden bg-BACKGROUND_MOBILE md:bg-BACKGROUND_DESKTOP">
               <div class="project-overlay absolute inset-0 bg-gradient-to-t from-black via-transparent to-black flex flex-col justify-center items-center text-center text-white p-4">
-                <h3 class="text-2xl font-normal mb-2">JimcostDev Portafolio</h3>
-                <p class="mb-4 font-light">Bienvenido a mi portafolio web. Descubre más sobre mí y mi trayectoria profesional.</p>
-                <div class="hashtags flex flex-wrap justify-center space-x-2">
-                  <span class="hashtag bg-gray-800 rounded-full px-3 py-1 text-sm  hover:text-primary">#figma</span>
-                  <span class="hashtag bg-gray-800 rounded-full px-3 py-1 text-sm  hover:text-primary">#tailwindcss</span>
-                  <span class="hashtag bg-gray-800 rounded-full px-3 py-1 text-sm  hover:text-primary">#javascript</span>
-                </div>
-                <a href="https://github.com/JimcostDev/jimcostdev-oficial" target="_blank" class="mt-4 text-primary  hover:text-secondary bg-gray-800 rounded-full px-3 py-1 text-sm inline-flex items-center">
-                  <i class="fas fa-link mr-1"></i> Ver Proyecto
+                <a href="https://github.com/JimcostDev/jimcostdev-oficial" target="_blank" class="Project-Btn">
+                  <i class="fas fa-external-link-alt"></i>
                 </a>
+                <h3 class="Project-Title">JimcostDev Portafolio</h3>
+                <p class="Project-Description">Bienvenido a mi portafolio web. Descubre más sobre mí y mi trayectoria profesional.</p>
+                <div class="hashtags flex flex-wrap justify-center space-x-2">
+                  <span class="Hashtag-Btn">#figma</span>
+                  <span class="Hashtag-Btn">#tailwindcss</span>
+                  <span class="Hashtag-Btn">#javascript</span>
+                </div>
               </div>
             </div>
 
             <div class="project bg-cover bg-center h-64 md:h-96 w-full relative flex-shrink-0 rounded-lg overflow-hidden  bg-BACKGROUND_MOBILE md:bg-BACKGROUND_DESKTOP">
               <div class="project-overlay absolute inset-0 bg-gradient-to-t from-black via-transparent to-black flex flex-col justify-center items-center text-center text-white p-4">
-                <h3 class="text-2xl font-normal mb-2">JimcostDev CV</h3>
-                <p class="mb-4 font-light">Este es mi sitio web diseñado como un currículum. También puedes descargarlo en formato PDF.</p>
-                <div class="hashtags flex flex-wrap justify-center space-x-2">
-                  <span class="hashtag bg-gray-800 rounded-full px-3 py-1 text-sm  hover:text-primary">#html</span>
-                  <span class="hashtag bg-gray-800 rounded-full px-3 py-1 text-sm  hover:text-primary">#sass</span>
-                  <span class="hashtag bg-gray-800 rounded-full px-3 py-1 text-sm  hover:text-primary">#javascript</span>
-                </div>
-                <a href="https://jimcostdev.github.io/CV_JimcostDev/" target="_blank" class="mt-4 text-primary hover:text-secondary bg-gray-800 rounded-full px-3 py-1 text-sm inline-flex items-center">
-                  <i class="fas fa-link mr-1"></i> Ver Proyecto
+                <a href="https://jimcostdev.github.io/CV_JimcostDev/" target="_blank" class="Project-Btn">
+                  <i class="fas fa-external-link-alt"></i>
                 </a>
+                <h3 class="Project-Title">JimcostDev CV</h3>
+                <p class="Project-Description">Este es mi sitio web diseñado como un currículum. También puedes descargarlo en formato PDF.</p>
+                <div class="hashtags flex flex-wrap justify-center space-x-2">
+                  <span class="Hashtag-Btn">#html</span>
+                  <span class="Hashtag-Btn">#sass</span>
+                  <span class="Hashtag-Btn">#javascript</span>
+                </div>
               </div>
             </div>
 
             <div class="project bg-cover bg-center h-64 md:h-96 w-full relative flex-shrink-0 rounded-lg overflow-hidden  bg-BACKGROUND_MOBILE md:bg-BACKGROUND_DESKTOP">
               <div class="project-overlay absolute inset-0 bg-gradient-to-t from-black via-transparent to-black flex flex-col justify-center items-center text-center text-white p-4">
-                <h3 class="text-2xl font-normal mb-2">JimcostDev API</h3>
-                <p class="mb-4 font-light">API para gestionar CVs y portafolios.</p>
-                <div class="hashtags flex flex-wrap justify-center space-x-2">
-                  <span class="hashtag bg-gray-800 rounded-full px-3 py-1 text-sm  hover:text-primary">#python</span>
-                  <span class="hashtag bg-gray-800 rounded-full px-3 py-1 text-sm  hover:text-primary">#fastapi</span>
-                  <span class="hashtag bg-gray-800 rounded-full px-3 py-1 text-sm  hover:text-primary">#mongodb</span>
-                </div>
-                <a href="https://github.com/JimcostDev/jimcostdev_api" target="_blank" class="mt-4 text-primary hover:text-secondary bg-gray-800 rounded-full px-3 py-1 text-sm inline-flex items-center">
-                  <i class="fas fa-link mr-1"></i> Ver Proyecto
+                <a href="https://github.com/JimcostDev/jimcostdev_api" target="_blank" class="Project-Btn">
+                  <i class="fas fa-external-link-alt"></i>
                 </a>
+                <h3 class="Project-Title">JimcostDev API</h3>
+                <p class="Project-Description">API para gestionar CVs y portafolios.</p>
+                <div class="hashtags flex flex-wrap justify-center space-x-2">
+                  <span class="Hashtag-Btn">#python</span>
+                  <span class="Hashtag-Btn">#fastapi</span>
+                  <span class="Hashtag-Btn">#mongodb</span>
+                </div>
               </div>
             </div>
             <!-- Agrega más tarjetas de proyecto según sea necesario -->
