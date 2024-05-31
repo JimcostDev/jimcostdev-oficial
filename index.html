@@ -44,7 +44,7 @@
     <header class="w-full bg-BACKGROUND_MOBILE md:bg-BACKGROUND_DESKTOP bg-cover relative">
       <!-- Barra de navegación fija en la parte inferior para móvil, en la parte superior para escritorio -->
       <nav id="navegacion" class="fixed bottom-0 left-0 w-full shadow-sm bg-secondary text-tertiary py-3 z-50  md:top-0 md:bottom-auto ">
-        <div class="container mx-auto md:w-3/4 flex justify-between items-center px-8 md:px-0 md:space-x-4">
+        <div class="container mx-auto max-w-screen-lg md:w-3/4 flex justify-between items-center px-8 md:px-0 md:space-x-4">
           <a href="#" class="flex items-center text-md space-x-2 lg:text-lg transition-transform hover:scale-110 hover:text-primary">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5">
               <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
@@ -120,11 +120,11 @@
     </header>
     
     <main>
-      <section id="sobre-mi" class="px-6 py-6 flex flex-col items-center">
+      <section id="sobre-mi" class="px-6 py-6 flex flex-col items-center w-full max-w-screen-lg mx-auto">
         <h2 class="Title">
           Sobre mí
         </h2>
-        <div class="bg-white shadow-md rounded-2xl p-6 text-center w-full md:w-4/5 md:px-24 transition-transform hover:scale-95 hover:shadow-lg duration-1000">
+        <div class="bg-white shadow-md rounded-2xl p-8 text-center w-full  transition-transform hover:scale-95 hover:shadow-lg duration-1000">
           <div class="border-b border-gray-300 mb-4 pb-4">
             <p class="mb-2"> Soy de <span class="text-primary"> Cali, Colombia 🇨🇴</span> </p>
             <p class="mb-2"> Vivo en <span class="text-primary"> Mallorca, España 🇪🇸 </span></p>
@@ -141,7 +141,7 @@
       </section>
       
       <!-- Skills Section -->
-      <section id="skills" class="px-4 py-6 md:mx-32">
+      <section id="skills" class="px-4 py-6 w-full max-w-screen-lg mx-auto">
         <h2 class="Title">
           Skills
         </h2>
@@ -185,7 +185,7 @@
         </div>
       </section>
 
-      <section id="experiencia" class="px-4 py-6 md:px-16 md:py-10">
+      <section id="experiencia" class="px-4 py-6 md:py-10 w-full max-w-screen-lg mx-auto">
         <h2 class="Title ">Experiencia Laboral</h2>
         <div class="flex flex-col md:flex-row md:justify-center">
           <div class="w-full md:w-1/12 flex justify-center md:pr-8">
@@ -246,7 +246,7 @@
       
       
       
-      <section id="estudios" class="px-4 py-6 md:px-16 md:py-10">
+      <section id="estudios" class="px-4 py-6 md:py-10 w-full max-w-screen-lg mx-auto">
         <h2 class="Title">Estudios</h2>
         <div class="flex justify-center mb-5">
           <div class="bg-white rounded-lg shadow-md p-4 flex items-center">
@@ -323,11 +323,11 @@
 
       <section id="proyectos" class="px-4 py-6 mb-4">
         <h2 class="Title">Proyectos</h2>
-        <div class="projects-container relative overflow-hidden w-full max-w-4xl mx-auto">
+        <div class="projects-container relative overflow-hidden w-full max-w-screen-lg mx-auto">
           <div id="projectCarousel" class="flex transition-transform duration-500">
 
-            <div class="project bg-cover bg-center h-64 md:h-96 w-full  relative flex-shrink-0 rounded-lg overflow-hidden bg-BACKGROUND_PROJECT">
-              <div class="project-overlay absolute inset-0 bg-gradient-to-t from-black via-transparent to-black flex flex-col justify-center items-center text-center text-white p-4">
+            <div class="project bg-cover bg-center h-96 md:h-11/12 w-full  relative flex-shrink-0 rounded-lg overflow-hidden bg-BACKGROUND_PROJECT">
+              <div class="project-overlay absolute inset-0 bg-gradient-to-r from-black via-transparent to-black flex flex-col justify-center items-center text-center text-white p-4">
                 <a href="https://www.youtube.com/@jimcostdev" target="_blank" class="Project-Btn">
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
@@ -344,7 +344,7 @@
               </div>
             </div>
 
-            <div class="project bg-cover bg-center h-64 md:h-96 w-full  relative flex-shrink-0 rounded-lg overflow-hidden bg-BACKGROUND_PROJECT">
+            <div class="project bg-cover bg-center h-96 md:h-11/12 w-full  relative flex-shrink-0 rounded-lg overflow-hidden bg-BACKGROUND_PROJECT">
               <div class="project-overlay absolute inset-0 bg-gradient-to-t from-black via-transparent to-black flex flex-col justify-center items-center text-center text-white p-4">
                 <a href="https://github.com/JimcostDev/python_programming_fundamentals" target="_blank" class="Project-Btn">
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5">
@@ -361,7 +361,7 @@
               </div>
             </div>
 
-            <div class="project bg-cover bg-center h-64 md:h-96 w-full  relative flex-shrink-0 rounded-lg overflow-hidden bg-BACKGROUND_PROJECT">
+            <div class="project bg-cover bg-center h-96 md:h-11/12 w-full  relative flex-shrink-0 rounded-lg overflow-hidden bg-BACKGROUND_PROJECT">
               <div class="project-overlay absolute inset-0 bg-gradient-to-t from-black via-transparent to-black flex flex-col justify-center items-center text-center text-white p-4">
                 <a href="https://github.com/JimcostDev/jimcostdev-oficial" target="_blank" class="Project-Btn">
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5">
@@ -369,7 +369,7 @@
                   </svg>
                 </a>
                 <h3 class="Project-Title">JimcostDev Portafolio</h3>
-                <p class="Project-Description">Bienvenido a mi portafolio web. Descubre más sobre mí y mi trayectoria profesional.</p>
+                <p class="Project-Description">Descubre más sobre mí y mi trayectoria profesional.</p>
                 <div class="hashtags flex flex-wrap justify-center space-x-2">
                   <span class="Hashtag-Btn">#figma</span>
                   <span class="Hashtag-Btn">#tailwindcss</span>
@@ -378,7 +378,7 @@
               </div>
             </div>
 
-            <div class="project bg-cover bg-center h-64 md:h-96 w-full relative flex-shrink-0 rounded-lg overflow-hidden  bg-BACKGROUND_PROJECT">
+            <div class="project bg-cover bg-center h-96 md:h-11/12 w-full relative flex-shrink-0 rounded-lg overflow-hidden  bg-BACKGROUND_PROJECT">
               <div class="project-overlay absolute inset-0 bg-gradient-to-t from-black via-transparent to-black flex flex-col justify-center items-center text-center text-white p-4">
                 <a href="https://jimcostdev.github.io/CV_JimcostDev/" target="_blank" class="Project-Btn">
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5">
@@ -395,7 +395,7 @@
               </div>
             </div>
 
-            <div class="project bg-cover bg-center h-64 md:h-96 w-full relative flex-shrink-0 rounded-lg overflow-hidden  bg-BACKGROUND_PROJECT">
+            <div class="project bg-cover bg-center h-96 md:h-11/12 w-full relative flex-shrink-0 rounded-lg overflow-hidden  bg-BACKGROUND_PROJECT">
               <div class="project-overlay absolute inset-0 bg-gradient-to-t from-black via-transparent to-black flex flex-col justify-center items-center text-center text-white p-4">
                 <a href="https://github.com/JimcostDev/jimcostdev_api" target="_blank" class="Project-Btn">
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5">
@@ -430,34 +430,27 @@
 
       <section id="servicios" class="px-4 py-6 md:px-16 md:py-10">
         <h2 class="Title">Servicios</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12  w-full max-w-screen-lg mx-auto">
         
           <!-- Servicio 1 -->
           <div class="bg-white rounded-lg shadow-md overflow-hidden">
-            <img src="img/s-dev.jpg" alt="Servicio 1" class="w-full h-60 object-cover transform hover:scale-105 transition duration-300">
+            <img src="img/s-dev.jpg" alt="Servicio 1" class="w-full h-11/12 md:h-96 object-cover transform hover:scale-105 transition duration-300">
             <div class="p-4">
               <h3 class="text-md lg:text-lg text-primary mb-2">Desarrollo Web</h3>
-              <p class="text-tertiary mb-4">Creación de sitios web responsivos y aplicaciones web utilizando las últimas tecnologías.</p>
+              <p class="text-tertiary mb-4">Ofrezco servicios de creación de sitios y aplicaciones web, garantizando soluciones personalizadas que satisfacen las necesidades específicas de tu negocio. Además, manejo todo el proceso de publicación, hosting y gestión de dominios, asegurando que tu presencia en línea sea efectiva y profesional desde el principio hasta el fin.</p>
             </div>
           </div>
         
           <!-- Servicio 2 -->
           <div class="bg-white rounded-lg shadow-md overflow-hidden">
-            <img src="img/s-tutor.jpg" alt="Servicio 2" class="w-full h-60 object-cover transform hover:scale-105 transition duration-300">
+            <img src="img/s-tutor.jpg" alt="Servicio 2" class="w-full h-11/12 md:h-96 object-cover transform hover:scale-105 transition duration-300">
             <div class="p-4">
               <h3 class="text-md lg:text-lg text-primary mb-2">Docente y Tutor de Programación</h3>
-              <p class="text-tertiary mb-4">Clases de informática, programación y desarrollo de software con enfoque práctico y personalizado.</p>
+              <p class="text-tertiary mb-4">Ofrezco clases de informática, programación y desarrollo de software, adaptadas a tus necesidades y nivel de experiencia. Con un enfoque práctico y personalizado, te enseñaré a aprender a programar y crear soluciones informáticas utilizando lenguajes y tecnologías como JavaScript, Python, Java, T-SQL y MongoDB. Mejora tus habilidades y alcanza tus objetivos con una formación diseñada para ti.</p>
             </div>
           </div>
         
-          <!-- Servicio 3 -->
-          <div class="bg-white rounded-lg shadow-md overflow-hidden">
-            <img src="img/s-tech.jpg" alt="Servicio 3" class="w-full h-60 object-cover transform hover:scale-105 transition duration-300">
-            <div class="p-4">
-              <h3 class="text-md lg:text-lg text-primary mb-2">Soporte Técnico</h3>
-              <p class="text-tertiary mb-4">Resolución de problemas técnicos y mantenimiento de sistemas informáticos.</p>
-            </div>
-          </div>
+          
         
         </div>
       </section>
