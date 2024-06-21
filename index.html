@@ -110,8 +110,8 @@
     
         <!-- Correo electrónico -->
         <div class="flex items-center justify-center px-8 p-2">
-          <span id="email" class="text-tertiary mr-2 Social-Icon text-xs">jimcostdev@gmail.com</span>
-          <div id="copyIcon" class="cursor-pointer text-tertiary text-xs transition-transform hover:scale-110 hover:text-tertiary" onclick="toggleCopyIcon()">
+          <span id="email" class="text-tertiary mr-2 Social-Icon text-xs md:text-sm">jimcostdev@gmail.com</span>
+          <div id="copyIcon" class="cursor-pointer text-tertiary text-xs md:text-sm transition-transform hover:scale-110 hover:text-tertiary" onclick="toggleCopyIcon()">
             <i id="icon" class="fas fa-copy"></i>
           </div>
           <small id="copiedMessage" class="text-secondary hidden"><i class="fas fa-check text-secondary text-xs"> ¡Copiado!</i></small>
@@ -417,11 +417,11 @@
         <div class="flex justify-center mb-5">
           <div class="bg-white rounded-lg shadow-md p-4 flex items-center">
             <div class="flex items-center mr-4">
-              <div class="w-3 h-3 bg-yellow-500 rounded-full mr-2"></div>
+              <div class="w-3 h-3 bg-yellow-300 rounded-full mr-2"></div>
               <span class="text-primary font-semibold">Grado</span>
             </div>
             <div class="flex items-center">
-              <div class="w-3 h-3 bg-green-500 rounded-full mr-2"></div>
+              <div class="w-3 h-3 bg-green-300 rounded-full mr-2"></div>
               <span class="text-primary font-semibold">Certificación</span>
             </div>
           </div>
@@ -436,9 +436,19 @@
             <div class="w-full md:w-11/12">
               <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 
+                <!-- Grado -->
+                <div class="relative mb-6 md:mb-0">
+                  <div class="absolute right-5 top-2 w-3 h-3 bg-yellow-300 rounded-full"></div>
+                  <div class="Study-Card">
+                    <h3 class="text-lg font-semibold">UNIR</h3>
+                    <p class="text-primary">Ingenieria en Informática</p>
+                    <p>2025</p>
+                  </div>
+                </div>
+
                 <!-- Certificación -->
                 <div class="relative mb-6 md:mb-0">
-                  <div class="absolute right-5 top-2 w-3 h-3 bg-green-500 rounded-full"></div>
+                  <div class="absolute right-5 top-2 w-3 h-3 bg-green-300 rounded-full"></div>
                   <div class="Study-Card">
                     <h3 class="text-lg font-semibold">MongoDB</h3>
                     <p>MongoDB Associate Developer</p>
@@ -450,7 +460,7 @@
       
                 <!-- Certificación -->
                 <div class="relative mb-6 md:mb-0">
-                  <div class="absolute right-5 top-2 w-3 h-3 bg-green-500 rounded-full"></div>
+                  <div class="absolute right-5 top-2 w-3 h-3 bg-green-300 rounded-full"></div>
                   <div class="Study-Card">
                     <h3 class="text-lg font-semibold">Microsoft</h3>
                     <p>Azure Fundamentals</p>
@@ -460,19 +470,11 @@
                   </div>
                 </div>
       
-                <!-- Grado -->
-                <div class="relative mb-6 md:mb-0">
-                  <div class="absolute right-5 top-2 w-3 h-3 bg-yellow-500 rounded-full"></div>
-                  <div class="Study-Card">
-                    <h3 class="text-lg font-semibold">UNIR</h3>
-                    <p class="text-primary">Ingenieria en Informática</p>
-                    <p>2025</p>
-                  </div>
-                </div>
+                
       
                 <!-- Certificación -->
                 <div class="relative mb-6 md:mb-0">
-                  <div class="absolute right-5 top-2 w-3 h-3 bg-green-500 rounded-full"></div>
+                  <div class="absolute right-5 top-2 w-3 h-3 bg-green-300 rounded-full"></div>
                   <div class="Study-Card">
                     <h3 class="text-lg font-semibold">Platzi</h3>
                     <p>Estudiante activo en Platzi</p>
@@ -490,10 +492,18 @@
         <!-- Mobile View -->
         <div class="block md:hidden">
           <ol class="relative border-l-2 border-sky-500 ml-6">
+
+            <!-- Grado -->
+            <li class="mb-10 ml-4">
+              <div class="absolute w-3 h-3 bg-yellow-300 rounded-full mt-1.5 -left-1.5 border border-white"></div>
+              <h3 class="text-lg font-semibold text-gray-900 dark:text-white">UNIR</h3>
+              <p class="text-primary">Ingenieria en Informática</p>
+              <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">2025</time>
+            </li>
             
             <!-- Certificación -->
             <li class="mb-10 ml-4">
-              <div class="absolute w-3 h-3 bg-green-500 rounded-full mt-1.5 -left-1.5 border border-white"></div>
+              <div class="absolute w-3 h-3 bg-green-300 rounded-full mt-1.5 -left-1.5 border border-white"></div>
               <h3 class="text-lg font-semibold text-gray-900 dark:text-white">MongoDB</h3>
               <p class="text-primary">MongoDB Associate Developer</p>
               <a href="https://www.credly.com/badges/e537a319-3e5b-456a-ac82-31c04834f30a/linked_in_profile" target="_blank" class="text-sm text-primary flex items-center mt-2">
@@ -503,7 +513,7 @@
             
             <!-- Certificación -->
             <li class="mb-10 ml-4">
-              <div class="absolute w-3 h-3 bg-green-500 rounded-full mt-1.5 -left-1.5 border border-white"></div>
+              <div class="absolute w-3 h-3 bg-green-300 rounded-full mt-1.5 -left-1.5 border border-white"></div>
               <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Microsoft</h3>
               <p class="text-primary">Azure Fundamentals</p>
               <a href="https://www.credly.com/badges/e8c1f177-3d1f-4496-9461-1b468ed30b4b/public_url" target="_blank" class="text-sm text-primary flex items-center mt-2">
@@ -511,17 +521,9 @@
               </a>
             </li>
             
-            <!-- Grado -->
-            <li class="mb-10 ml-4">
-              <div class="absolute w-3 h-3 bg-yellow-500 rounded-full mt-1.5 -left-1.5 border border-white"></div>
-              <h3 class="text-lg font-semibold text-gray-900 dark:text-white">UNIR</h3>
-              <p class="text-primary">Ingenieria en Informática</p>
-              <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">2025</time>
-            </li>
-            
             <!-- Certificación -->
             <li class="ml-4">
-              <div class="absolute w-3 h-3 bg-green-500 rounded-full mt-1.5 -left-1.5 border border-white"></div>
+              <div class="absolute w-3 h-3 bg-green-300 rounded-full mt-1.5 -left-1.5 border border-white"></div>
               <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Platzi</h3>
               <p class="text-primary">Estudiante activo en Platzi</p>
               <a href="https://platzi.com/p/JimcostDev/" target="_blank" class="text-sm text-primary flex items-center mt-2">
