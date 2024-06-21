@@ -546,7 +546,9 @@
           <p class="text-base italic">"Ponte un blanco alto y haz fervientes esfuerzos por alcanzarlo y no te desanimes" EGW</p>
         </div>
         <div class="footer-bottom">
-          <p class="text-sm mb-2">Hecho con 🤍 - © Ronaldo Jiménez 2024</p>
+          <!-- llamar año actual -->
+          
+          <p class="text-sm mb-2">Hecho con 🤍 - © Ronaldo Jiménez <span id="currentYear"></span></p>
           <!-- Redes sociales -->
           <div class="mb-2 text-xl lg:text-2xl">
             <a href="https://www.linkedin.com/in/ronaldo-jimenez" target="_blank" class="Social-Icon">
@@ -564,6 +566,10 @@
     </footer>
     
     <script>
+      // obtener año actual
+      const year = new Date().getFullYear();
+      document.getElementById('currentYear').textContent = year;
+
       // Toggle extra details
       document.addEventListener('DOMContentLoaded', () => {
     const toggleButtons = document.querySelectorAll('.toggle-details');
