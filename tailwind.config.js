@@ -5,7 +5,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        BACKGROUND_DESKTOP: "url('img/BACKGROUND_DESKTOP.webp')",
+        BACKGROUND_DESKTOP: "url('img/BACKGROUND-DESKTOP.webp')",
         BACKGROUND_MOBILE: "url('img/BACKGROUND_MOBILE.webp')",
         BACKGROUND_PROJECT: "url('img/BACKGROUND_PROJECT.jpg')",
       },
