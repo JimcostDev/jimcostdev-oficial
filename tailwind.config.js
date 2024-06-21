@@ -21,7 +21,7 @@ module.exports = {
         tertiary: "#00142E",
       },
       fontFamily: {
-        Montserrat: ["Montserrat", "sans-serif"],
+        Onest: ["Onest", "sans-serif"],
       },
       typography: {
         h2: {
