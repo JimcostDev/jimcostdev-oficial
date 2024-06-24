@@ -140,7 +140,4 @@ dist
 # SvelteKit build / generate output
 .svelte-kit
 
-# tailwindcss
-input.css
-
 # End of https://www.toptal.com/developers/gitignore/api/node
